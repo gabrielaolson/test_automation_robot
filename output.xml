@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.3 on darwin)" generated="20210114 16:54:16.016" rpa="false">
+<suite id="s1" name="Tests" source="/Users/gabriela/Desktop/organizar/test_automation_robot/tests">
+<suite id="s1-s1" name="Amazon" source="/Users/gabriela/Desktop/organizar/test_automation_robot/tests/Amazon.robot">
+<kw name="Insert Testing Data" library="Common" type="setup">
+<kw name="Custom Keyword 1" library="Common">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Doing keyword 1</arg>
+</arguments>
+<msg timestamp="20210114 16:54:16.384" level="INFO">Doing keyword 1</msg>
+<status status="PASS" starttime="20210114 16:54:16.384" endtime="20210114 16:54:16.384"></status>
+</kw>
+<status status="PASS" starttime="20210114 16:54:16.383" endtime="20210114 16:54:16.384"></status>
+</kw>
+<kw name="Custom Keyword 2" library="Common">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Doing keyword 2...</arg>
+</arguments>
+<msg timestamp="20210114 16:54:16.385" level="INFO">Doing keyword 2...</msg>
+<status status="PASS" starttime="20210114 16:54:16.385" endtime="20210114 16:54:16.385"></status>
+</kw>
+<status status="PASS" starttime="20210114 16:54:16.385" endtime="20210114 16:54:16.385"></status>
+</kw>
+<status status="PASS" starttime="20210114 16:54:16.383" endtime="20210114 16:54:16.385"></status>
+</kw>
+<test id="s1-s1-t1" name="Should be able to login">
+<kw name="Begin Web Test" library="Common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210114 16:54:16.387" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210114 16:54:19.154" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20210114 16:54:19.153" endtime="20210114 16:54:19.155"></status>
+</kw>
+<msg timestamp="20210114 16:54:19.169" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 85
+</msg>
+<status status="FAIL" starttime="20210114 16:54:16.387" endtime="20210114 16:54:19.169"></status>
+</kw>
+<status status="FAIL" starttime="20210114 16:54:16.386" endtime="20210114 16:54:19.170"></status>
+</kw>
+<kw name="End Web Test" library="Common" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210114 16:54:19.171" endtime="20210114 16:54:19.172"></status>
+</kw>
+<status status="PASS" starttime="20210114 16:54:19.171" endtime="20210114 16:54:19.172"></status>
+</kw>
+<status status="FAIL" starttime="20210114 16:54:16.385" endtime="20210114 16:54:19.172" critical="yes">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 85
+</status>
+</test>
+<test id="s1-s1-t2" name="Logged out user should be able to search for products">
+<kw name="Begin Web Test" library="Common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210114 16:54:19.177" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210114 16:54:21.762" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20210114 16:54:21.761" endtime="20210114 16:54:21.762"></status>
+</kw>
+<msg timestamp="20210114 16:54:21.763" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 85
+</msg>
+<status status="FAIL" starttime="20210114 16:54:19.177" endtime="20210114 16:54:21.763"></status>
+</kw>
+<status status="FAIL" starttime="20210114 16:54:19.176" endtime="20210114 16:54:21.764"></status>
+</kw>
+<kw name="End Web Test" library="Common" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210114 16:54:21.766" endtime="20210114 16:54:21.766"></status>
+</kw>
+<status status="PASS" starttime="20210114 16:54:21.765" endtime="20210114 16:54:21.766"></status>
+</kw>
+<tags>
+<tag>Current</tag>
+</tags>
+<status status="FAIL" starttime="20210114 16:54:19.174" endtime="20210114 16:54:21.767" critical="yes">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 85
+</status>
+</test>
+<test id="s1-s1-t3" name="Logged out user should be able to view a product">
+<kw name="Begin Web Test" library="Common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210114 16:54:21.772" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210114 16:54:24.331" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20210114 16:54:24.330" endtime="20210114 16:54:24.331"></status>
+</kw>
+<msg timestamp="20210114 16:54:24.331" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 85
+</msg>
+<status status="FAIL" starttime="20210114 16:54:21.771" endtime="20210114 16:54:24.332"></status>
+</kw>
+<status status="FAIL" starttime="20210114 16:54:21.770" endtime="20210114 16:54:24.332"></status>
+</kw>
+<kw name="End Web Test" library="Common" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210114 16:54:24.334" endtime="20210114 16:54:24.334"></status>
+</kw>
+<status status="PASS" starttime="20210114 16:54:24.333" endtime="20210114 16:54:24.335"></status>
+</kw>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="FAIL" starttime="20210114 16:54:21.768" endtime="20210114 16:54:24.335" critical="yes">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 85
+</status>
+</test>
+<test id="s1-s1-t4" name="User should be able to search for products">
+<kw name="Begin Web Test" library="Common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210114 16:54:24.342" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210114 16:54:26.947" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20210114 16:54:26.946" endtime="20210114 16:54:26.948"></status>
+</kw>
+<msg timestamp="20210114 16:54:26.950" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 85
+</msg>
+<status status="FAIL" starttime="20210114 16:54:24.341" endtime="20210114 16:54:26.950"></status>
+</kw>
+<status status="FAIL" starttime="20210114 16:54:24.340" endtime="20210114 16:54:26.952"></status>
+</kw>
+<kw name="End Web Test" library="Common" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210114 16:54:26.955" endtime="20210114 16:54:26.956"></status>
+</kw>
+<status status="PASS" starttime="20210114 16:54:26.954" endtime="20210114 16:54:26.957"></status>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="FAIL" starttime="20210114 16:54:24.338" endtime="20210114 16:54:26.957" critical="yes">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 85
+</status>
+</test>
+<test id="s1-s1-t5" name="User should be able to sign in to check out">
+<kw name="Begin Web Test" library="Common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210114 16:54:26.994" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210114 16:54:29.750" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20210114 16:54:29.749" endtime="20210114 16:54:29.750"></status>
+</kw>
+<msg timestamp="20210114 16:54:29.751" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 85
+</msg>
+<status status="FAIL" starttime="20210114 16:54:26.992" endtime="20210114 16:54:29.752"></status>
+</kw>
+<status status="FAIL" starttime="20210114 16:54:26.961" endtime="20210114 16:54:29.752"></status>
+</kw>
+<kw name="End Web Test" library="Common" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210114 16:54:29.754" endtime="20210114 16:54:29.755"></status>
+</kw>
+<status status="PASS" starttime="20210114 16:54:29.753" endtime="20210114 16:54:29.755"></status>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="FAIL" starttime="20210114 16:54:26.959" endtime="20210114 16:54:29.755" critical="yes">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 85
+</status>
+</test>
+<kw name="Cleanup Testing Data" library="Common" type="teardown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am cleaning up the test data...</arg>
+</arguments>
+<msg timestamp="20210114 16:54:29.760" level="INFO">I am cleaning up the test data...</msg>
+<status status="PASS" starttime="20210114 16:54:29.760" endtime="20210114 16:54:29.761"></status>
+</kw>
+<status status="PASS" starttime="20210114 16:54:29.759" endtime="20210114 16:54:29.761"></status>
+</kw>
+<doc>This is some basic info about the whole suite</doc>
+<status status="FAIL" starttime="20210114 16:54:16.054" endtime="20210114 16:54:29.761"></status>
+</suite>
+<status status="FAIL" starttime="20210114 16:54:16.018" endtime="20210114 16:54:29.770"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="5">Critical Tests</stat>
+<stat pass="0" fail="5">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1">Current</stat>
+<stat pass="0" fail="3">Smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="5" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="5" id="s1-s1" name="Amazon">Tests.Amazon</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
